@@ -91,6 +91,8 @@ class HolidayFormWidget extends StatelessWidget {
                         suffixIcon: Icon(Icons.event_note),
                         labelText: 'Dia',
                         ),
+                        initialValue: holidayController.holiday.day,
+                        initialDate: holidayController.holiday.day,
                         mode: DateTimeFieldPickerMode.date,
                         autovalidateMode: AutovalidateMode.always,
                         validator: (e) {

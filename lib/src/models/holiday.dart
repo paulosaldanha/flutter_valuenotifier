@@ -15,6 +15,10 @@ class Holiday {
     status = "A";
   }
 
+  String dateToShow(){
+    return DateFormat('dd-MM-yyyy').format(day);
+  }
+
   Map<String,dynamic> toMap() {
     var map = <String,dynamic>{
       'id': id,

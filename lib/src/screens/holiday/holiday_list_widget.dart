@@ -47,6 +47,8 @@ class HolidayListWidget extends StatelessWidget {
                 return ListaWidget(
                   key: key,
                   title: holiday.name,
+                  subtitle: holiday.dateToShow(),
+                  color: (index % 2 == 0) ? Colors.white : Colors.grey[200],
                   removeClicked: () async {
                     var answer = await showAlertConfirm(context, "Deseja Excluir", "Confirmar Exclusao");
                     if(answer == 1){
